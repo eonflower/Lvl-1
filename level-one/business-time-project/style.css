@@ -1,0 +1,158 @@
+.header {
+    font-size: 45px;
+    text-shadow: 1px 1px 1px mediumorchid;
+    font-family: monospace;
+    font-weight: 800;
+    letter-spacing: 8px;
+    text-align: center;
+    border: 15px groove rgba(246, 34, 99, 0.3);
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 248, 0.4), yellow);
+    padding: 18px;
+    margin: 12px;
+}
+  
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+  
+nav li {
+    font-family: monospace;
+    font-size: 16px;
+    color: black;
+    display: inline-block;
+    background-color: lightpink;
+    padding: 10px;
+    margin: 3px;
+    border: 2px solid rgba(70, 34, 99, 0.6);
+}
+  
+nav li > a {
+    text-decoration: none;
+}
+  
+nav li:hover {
+    background-color: rgba(253, 221, 0, 0.4);
+    transition: 0.4s;
+}
+  
+#clouds {
+    position: relative;
+}
+
+.slogan {
+    font-size: 36px;
+    font-family: Ink Free;
+    font-weight: 800;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+  
+#clouds > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    width: 100%;
+    height: auto;
+}
+  
+#arrivalsTitle {
+    font-size: 30px;
+    font-family: monospace;
+    text-align: center;
+    margin-top: 10px;
+}
+  
+.newArrivals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+  
+.newArrivals img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.newArrivals img:hover {
+    opacity: 0.6;
+    transition-delay: 0.1s;
+}
+  
+@media only screen and (max-width: 768px) {
+    .newArrivals {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}}
+
+
+
+.aboutSection {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bio {
+    padding-right: 30px;
+    margin-right: 20px;
+    margin: auto;
+    font-size: 20px;
+    text-align: end;
+
+}
+
+.aboutSection img {
+    float:left;
+    border: 10px groove rgba(247, 174, 37, 0.8);
+    width: 80%;
+    height: 80%;
+    
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.productTitle {
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: monospace;
+    text-align: center;
+    
+}
+
+.allProduct {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+  
+.allProduct img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.allProduct img:hover {
+    opacity: 0.6;
+    transition-delay: 0.1s;
+}
+
+.contact {
+    margin-top: 100px;
+    padding: 30px;
+    font-size: 42px;
+    font-family: monospace;
+    font-weight: 900;
+    letter-spacing: 8px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(33, 143, 143);
+    border: 5px dotted rgba(104, 17, 159, 0.7);
+    background-image: -webkit-radial-gradient(rgb(50, 132, 200), pink);
+}
