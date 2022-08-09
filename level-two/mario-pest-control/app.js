@@ -6,5 +6,3 @@ function calc() {
     let cheep = document.getElementById('cheepTotal').value || 0;
     document.getElementById('calculated').value = (bob * 7) + (goomba * 5) + (cheep * 11) + " Coins"
 };
-
-// collect.addEventListener('click', calc)

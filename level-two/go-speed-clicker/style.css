@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+    text-align: center;
+    padding: 50px;
+    }
+  
+  #title {
+    font-size: 36px;
+    text-align: center;
+    color: rgb(240, 187, 54);
+    font-family: fantasy;
+    letter-spacing: 5px;
+    text-decoration: 2px overline underline wavy rgba(236, 112, 164, 0.928);
+    text-underline-offset: 9px;
+    text-shadow: 2px 2px 2px rgb(196, 80, 30);
+  }
+  
+  button {
+    display: inline-block;
+    font-size: 18px;
+    margin: auto;
+    padding: 5px;
+    border: 5px outset rgb(238, 148, 88);
+    background: linear-gradient(23deg, rgb(241, 243, 97), rgb(247, 97, 145));
+    border-radius: 30px;
+    margin-bottom: 55px;
+  }
+
+  button:hover {
+    background: linear-gradient(23deg, rgb(244, 247, 156), rgb(242, 151, 180));
+  }
+
+  button:active:hover {
+    background: linear-gradient(23deg, rgb(248, 255, 54), rgb(252, 50, 114));
+  }
+  
+  #clicks {
+    width: 150px;
+    padding: 20px;
+    margin: auto;
+    font-size: 20px;
+    color: rgb(207, 98, 170);
+    margin-bottom: 55px;
+    border-width: 20px;
+    border-style: solid;
+    border-radius: 30px;
+    border-image: repeating-radial-gradient(ellipse at 50%,rgb(224, 211, 64),rgb(255, 123, 202) 2px,rgb(255, 162, 0)3px) 1;
+  }
+
+  #time {
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(207, 98, 170);
+  }
+    
