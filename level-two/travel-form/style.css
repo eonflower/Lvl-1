@@ -15,9 +15,7 @@ h1 {
 #myForm {
     font-family: monospace;
     display: block;
-    padding: 30px;
     text-align: center;
-    font-size: 16px;
     background: radial-gradient(ellipse at center, rgb(116, 223, 225), rgb(101, 147, 216), rgb(100, 0, 128));
     border: 6px double rgb(52, 1, 94);
     border-radius: 100px;
@@ -25,9 +23,7 @@ h1 {
 }
 
 #myForm > p#header {
-    font-size: 20px;
     text-decoration: underline;
-    text-underline-offset: 5px;
 }
 
 input {
@@ -46,4 +42,43 @@ button {
     border-radius: 10px;
     padding: 3px;
     border: 2px outset rgb(114, 113, 113); 
+}
+
+@media screen and (min-width: 785px){
+    #myForm {
+        margin: auto;
+        padding: 30px;
+        width: 75%;
+        font-size: 16px;
+    }
+    p#header {
+        font-size: 20px;
+        text-underline-offset: 5px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 780px){
+    #myForm {
+        margin: auto;
+        padding: 10px;
+        width: 95%;
+        font-size: 14px;
+    }
+    p#header {
+        font-size: 18px;
+        text-underline-offset: 3px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #myForm {
+        margin: auto;
+        padding: 10px;
+        width: 95%;
+        font-size: 12px;
+    }
+    p#header {
+        font-size: 14px;
+        text-underline-offset: 2.5px;
+    }
 }
