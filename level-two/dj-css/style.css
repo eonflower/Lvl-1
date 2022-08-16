@@ -1,16 +1,30 @@
 body {
-    background-color: rgba(189, 249, 235, 0.493);
+    background-color: rgb(0, 0, 0, 0.85);
+    cursor: pointer;
   }
   
   .title {
     position: relative;
-    display: block;
     width: 100%;
-    text-align: center;
-    cursor: pointer;
+    display: -ms-flexbox;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title > img {
+    position: fixed;
+    opacity: 60%;
+    width: 100%;
   }
 
   .header {
+    opacity: 95%;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 10px;
     margin-bottom: 0px;
     text-align: center;
@@ -18,20 +32,26 @@ body {
     font-weight: 900;
     letter-spacing: 5px;
     background: #FF6E4A;
-    background: repeating-radial-gradient(ellipse farthest-corner at center center, #57F4FF 69%, #00FF00 52%, #3888CF 72%);
+    background: repeating-radial-gradient(ellipse farthest-corner at center center, #ff57ff 69%, #00ccff 52%, #a738cf 72%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(3px 3px 2.5px black)
   }
 
   .subHeader {
-    margin-top: 0px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     font-family: "Helvetica";
     font-weight: 400;
     font-style: italic;
     letter-spacing: 2px;
-    color: black;
+    color: white;
+    filter: drop-shadow(3px 3px 3px black);
+    opacity: 82%;
   }
   
   .underbar,
@@ -62,7 +82,6 @@ body {
   }
 
   .text {
-    margin-top: 25px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -81,7 +100,7 @@ body {
     border: 3px solid #ff1a66;
     filter: drop-shadow(3px 3px 5px black);
     background: #ff1a66;
-    transition: height ease-in 1s;
+    transition: all ease-in 1s;
   }
   
   .box1:hover {
@@ -98,7 +117,7 @@ body {
   
   .box2:hover {
     transition: 1s ease-in;
-    margin-top: 90px;
+    margin-top: 150px;
     border-radius: 30px;
   }
   
@@ -124,7 +143,7 @@ body {
   .box4:hover {
     transition: 1s;
     border-radius: 200px;
-    padding: 100px;
+    padding: 80px;
   }
   
   .box5 {
@@ -156,7 +175,6 @@ body {
   
   .footer {
     display: -ms-flexbox;
-    opacity: 80%;
     justify-content: center;
     align-items: center;
     color: black;
@@ -168,7 +186,7 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(23deg, #00ebff, #00eb56)
+    background: linear-gradient(23deg, #07b3c3, #6a1589)
   }
 
   .music {
@@ -181,7 +199,8 @@ body {
 @media screen and (min-width: 1200px) {
     .container {
         display: flex;
-        margin-bottom: 120px;
+        margin-top: 300px;
+        margin-bottom: 300px;
         justify-content: space-evenly;
     }
 
@@ -193,7 +212,7 @@ body {
   }
 
     .title .underbar::after {
-        top: 160px;
+        top: 180px;
         height: 2px;
         width: 0%;
         left: 30%;
@@ -209,15 +228,16 @@ body {
       
       .subHeader {
         font-size: 24px;
+        top: 600%;
       }
 
     .box1, .box2, .box3, .box4, .box5, .box6 {
-        display: inline-block;
-        margin-top: 25px;
-        margin-bottom: 100px;
-        padding: 20px;
-        height: 100px;
-        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 170px;
+        width: 170px;
         border-radius: 95px;
         text-align: center;
         font-size: 14px;
@@ -230,9 +250,13 @@ body {
 
 @media screen and (min-width: 850px) and (max-width: 1199px) {
     .container {
-        display: flex;
-        margin-bottom: 120px;
-        justify-content: space-evenly;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 280px;
+        margin-top: 280px;
+        align-items: center;
+        justify-items: center;
     }
 
     .underbar,
@@ -259,16 +283,17 @@ body {
       
       .subHeader {
         font-size: 20px;
+        top: 540%;
       }
 
     .box1, .box2, .box3, .box4, .box5, .box6 {
-        display: inline-block;
-        margin-top: 25px;
-        margin: 10px;
-        padding: 20px;
-        height: 80px;
-        width: 80px;
-        border-radius: 95px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 205px;
+        width: 205px;
+        border-radius: 120px;
         font-size: 14px;
       }
 
@@ -281,7 +306,11 @@ body {
 
 @media screen and (min-width: 481px) and (max-width: 849px) {
     .container {
-        margin-bottom: 110px;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 190px;
+        margin-top: 190px;
     }
 
     .underbar,
@@ -308,6 +337,7 @@ body {
       
       .subHeader {
         font-size: 16px;
+        top: 490%;
       }
 
       .box1, .box2, .box3, .box4, .box5, .box6 {
@@ -332,7 +362,8 @@ body {
 
 @media screen and (max-width: 480px) {
     .container {
-        margin-bottom: 100px;
+        margin-bottom: 130px;
+        margin-top: 130px;
     }
 
     .underbar,
@@ -359,6 +390,7 @@ body {
       
       .subHeader {
         font-size: 14px;
+        top: 420%;
       }
 
     .box1, .box2, .box3, .box4, .box5, .box6 {
@@ -373,7 +405,7 @@ body {
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 18px;
+        font-size: 16px;
       }
 
     .footer {
