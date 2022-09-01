@@ -32,7 +32,7 @@ body {
     font-weight: 900;
     letter-spacing: 5px;
     background: #FF6E4A;
-    background: repeating-radial-gradient(ellipse farthest-corner at center center, #ff57ff 69%, #00ccff 52%, #a738cf 72%);
+    background: repeating-radial-gradient(ellipse farthest-corner at center center, #ff57ff 69%, #00ccff 52%, #3888CF 72%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(3px 3px 2.5px black)
@@ -112,12 +112,12 @@ body {
     border: 3px solid #ff99cc;
     filter: drop-shadow(3px 3px 5px black);
     background: #ff99cc;
-    transition: all ease-in 1s;
+    transition: all ease-in 2s;
   }
   
   .box2:hover {
-    transition: 1s ease-in;
-    margin-top: 150px;
+    transition: 2s ease-out;
+    margin-left: 90px;
     border-radius: 30px;
   }
   
@@ -125,12 +125,13 @@ body {
     border: 3px double #cc66ff;
     filter: drop-shadow(3px 3px 5px black);
     background: #cc66ff;
-    transition: border ease-in 1s;
+    transition: all ease-in 1s;
   }
   
   .box3:hover {
     transition: 1s;
-    border: 20px double white;
+    border: 20px double rgb(76, 255, 243);
+    border-radius: 0 110px 0 110px;
   }
 
   .box4 {
