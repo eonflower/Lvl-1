@@ -1,6 +1,10 @@
+
+
 body {
     background-color: rgb(0, 0, 0, 0.85);
     cursor: pointer;
+    box-sizing: border-box;
+    margin: 0;
   }
   
   .title {
@@ -226,6 +230,7 @@ body {
     .header {
         font-size: 90px;
       }
+    
       
       .subHeader {
         font-size: 24px;

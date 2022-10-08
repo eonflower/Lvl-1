@@ -9,15 +9,17 @@
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville" rel="stylesheet">
     <script src="https://kit.fontawesome.com/28ce2abbec.js" crossorigin="anonymous"></script>
 </head>
-<body>
- <div class="ZenContainer">
 
-    <div id="box1" class="header">
+<body>
+
+    <div class="header">
+        <img src="http://www.csszengarden.com/214/enso.svg" id="titleImg">
+        <div id="box1" class="title">
         <header>
-            <img src="http://www.csszengarden.com/214/enso.svg" id="headImg">
             <h1>CSS Zen Garden</h1>
             <h2>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
         </header>
+        </div>
     </div>
 
     <div id="box2" class="nav">
@@ -26,9 +28,13 @@
         <a href="#" class="next">&gt;</a>
     </div>
 
+    <div class="navBox"></div>
+
+ <div class="zenContainer">
+    
     <div id="box3" class="intro">
         <p>A demonstration of what can be accomplished through CSS-based design. Select any style sheet from the list to load it into this page.</p>
-        <p>Download the example <a href="">HTML FILE</a> and <a href="">CSS FILE</a></p>
+        <p>Download the example <a href="#"><i id="download" class="fa-solid fa-down-to-line"></i>HTML FILE</a> and <a href="#"><i id="download" class="fa-solid fa-down-to-line"></i>CSS FILE</a></p>
         
         <h2>The Road to Enlightenment</h2>
         <p>Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible DOMs, broken CSS support, and abandoned browsers.</p>
@@ -59,19 +65,19 @@
         <p>This is a learning exercise as well as a demonstration. You retain full copyright on your graphics (with limited exceptions, see submission guidelines), but we ask you release your <abbr title="Cascading Style Sheets">CSS</abbr> under a Creative Commons license identical to the one on this site so that others may learn from your work.</p>
     </div>
 
-    <div id="box6"></div>
+    <div id="box6" class="columnSpace"></div>
 
     <div id="box7" class="credit">
-        <p>By <a href="">David Shea</a> Bandwidth graciously donated by <a href="">mediatemple</a>.</p>
+        <p>By <a href="">Dave Shea</a> Bandwidth graciously donated by <a href="">mediatemple</a>.</p>
         <p>Now available: <a href="">Zen Garden, the book</a>.</p>
     </div>
 
     <div id="box8" class="icons">
         <a href=""><i id="htmlIcon" class="fa-brands fa-html5"></i></a>
-        <a href=""><i class="fa-brands fa-css3"></i></a>
+        <a href=""><i id="cssIcon" class="fa-brands fa-css3"></i></a>
         <a href=""><i id="ccIcon" class="fa-brands fa-creative-commons"></i></a>
         <a href=""><i id="accessibleIcon" class="fa-brands fa-accessible-icon"></i></a>
-        <a href=""><i class="fa-brands fa-github"></i></a>
+        <a href=""><i id="githubIcon" class="fa-brands fa-github"></i></a>
     </div>
 
     <ul id="box9" class="resources">

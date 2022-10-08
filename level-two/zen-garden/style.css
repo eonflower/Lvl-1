@@ -1,6 +1,6 @@
 /*
 font-family: 'Julius Sans One', sans-serif;
-font-family: 'Libre Baskerville', serif;
+font-family: 'Libre Baskerville', sans-serif;
 */
 
 * {
@@ -10,28 +10,14 @@ font-family: 'Libre Baskerville', serif;
 
 body {
     font-family: 'Libre Baskerville', sans-serif;
-    font-size: .65em;
     font-weight: normal;
     color: rgb(58, 58, 58);
-}
-
-.header {
-    border-top: solid 8px rgba(32, 86, 91, 0.8);
-    height: 190px;
-    width: 100%;
-    background-attachment: fixed, fixed, scroll;
-    background-image: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
-    background-size: 50% auto, auto, cover;
-    background-repeat: repeat, repeat, no-repeat;
-    background-position: 0 0, 0 0, 0 50%;
-    text-align: center;
 }
 
 .header h1 { 
     margin-top: 0;
     display: inline;
     font-family: 'Julius Sans One', sans-serif;
-    font-size:  2.85em;
     font-weight: normal;
     color: white;
     line-height: 50px;
@@ -39,47 +25,51 @@ body {
 }
 
 .header h2 {
-    display: block;
     font-family: 'Libre Baskerville';
     color: rgba(255, 255, 255, 0.603);
-    font-size: 1.2em;
-    font-weight: 400;
+    font-weight: 500;
     font-style: italic;
-    margin-left: 85px;
+    padding-bottom: 25px;
+    text-align: center;
 
 }
 
-.header img {
+.header {
+    display: flex;
+    border-top: solid 8px rgba(32, 86, 91, 0.8);
+    width: 100%;
+    background-attachment: fixed, fixed, scroll;
+    background-image: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
+    background-size: 50% auto, auto, cover;
+    background-repeat: repeat, repeat, no-repeat;
+    background-position: 0 0, 0 0, 0 50%;
+    
+}
+
+
+
+#titleImg {
+    display: inline;
     background: url(enso.svg);
-    width: 60px;
-    height: 60px;
-    opacity: 0.7;
-    margin: 15px 20px 0 0;
+    margin: -15px 20px 0 0;
 
 }
 
 .nav {
-    position: absolute;
     display: flex;
-    background-color: rgba(255, 255, 255, 0.25);
-    width: 100%;
-    margin-top: -50px;
-    padding-bottom: 20px;
-    justify-content: space-between;
     font-family: 'Julius Sans One', sans-serif;
     text-decoration: none;
-
+    justify-content: space-between;
+    position: absolute;
 }
 
 .nav a {
-    display: block;
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
-    font-size: 1.2em;
+    
 }
 
 .nav .designs:hover {
-    display: block;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.4);
     width: 100%;
@@ -93,7 +83,6 @@ body {
 }
 
 .nav .previous:hover {
-    display: block;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.4);
     transition: all .3s ease-in;
@@ -101,14 +90,11 @@ body {
 }
 
 .nav .previous {
-    display: block;
-    margin-left: 15px;
     text-align: left;
     font-size: 5em;
 }
 
 .nav .next:hover {
-    display: block;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.4);
     transition: all .3s ease-in;
@@ -116,39 +102,62 @@ body {
 }
 
 .nav .next {
-    display: block;
-    margin-right: 15px;
     text-align: end;
     font-size: 5em;
 }
 
 h2 {
     font-family: 'Julius Sans One', sans-serif;
+    font-weight: lighter;
+    
 }
 
 p {
     padding-bottom: 15px;
 }
 
-#box3, #box4, #box5, #box6, #box7, #box8 {
-    padding-left: 65px;
-    padding-right: 65px;
-    padding-bottom: 20px;
-    line-height: 22px;
-}
-
 .intro {
     margin-top: 30px;
+}
+
+.intro a {
+    padding: 1px 5px 1px 5px;
+    color: #809b7e;
+    text-decoration: none;
+    font-family: 'Julius Sans One', sans-serif;
+    transition: all 0.25s ease-out;
+}
+
+#download::before {
+    margin-right: 5px;
+    display: inline-block;
+    font: var(--fa-font-solid);
+    content: "\f34a";
+    position: relative;
+    border-radius: 1px;
+    font-size: 20px;
+    background: #d9e1cd;
+    color: #809b7e;
+}
+
+.intro a:hover {
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.25s ease-out;
+    background-color: #0f788a;
+    color: rgb(255, 255, 255);
+
 }
 
 .mid {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: rgba(155, 198, 173, 0.486);
+    background-color: rgba(155, 198, 173, 0.5);
     background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/bamboo.png);
     background-repeat: repeat, repeat, no-repeat;
     background-attachment: scroll, scroll, fixed;
     background-size: auto, auto, cover;
+    width: 100%;
     
 }
 
@@ -159,18 +168,14 @@ p {
 
 .credit {
     display: block;
-    padding-top: 45px;
     font-style: italic;
     text-align: center;
     font-size: 1.6em;
-    line-height: 2.5;
     color: rgba(255, 255, 255, 0.5);
-    height: 140px;
     background-image: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/koi.jpg);
     background-repeat: repeat, repeat, repeat, no-repeat;
     background-attachment: scroll, scroll, scroll, fixed;
     background-size: 50% auto, auto, auto, cover;
-
 }
 
 .credit a {
@@ -181,15 +186,12 @@ p {
 
 .icons {
     background-color: #134347;
-    padding-top: 30px;
-    padding-bottom: 50px;
     text-align: center;
     font-size: 21px;
 }
 
 .icons i {
     position: relative;
-    padding: 7px;
     margin-inline: 20px;
     color: rgba(255, 255, 255, 0.5);
     border: 2px solid rgba(255, 255, 255, 0.5);
@@ -215,15 +217,17 @@ p {
     padding: 7px 9px 7px 9px;
 }
 
+
+
 .resources {
-    display: block;
     background: #edf4f0;
-    overflow: hidden;
     margin: 0;
     width: 100%;
     padding-bottom: 10px;
     padding-left: 0;
     line-height: 22px;
+    display: block;
+    overflow: hidden;
 }
 
 .resources a {
@@ -240,26 +244,19 @@ p {
 
 [id*="resource"] {
     padding: 15px 10% 5px 10%;
-    float: left;
-    width: 50%;
-    border-top: solid 1px #d9e3dc;
     font-family: 'Libre Baskerville';
     font-style: italic;
     list-style: none;
     color: #c0cac3;
+    float: left;
+    width: 50%;
     
 }
 
 #box10 {
-    padding-left: 0;
     padding-bottom: 30px;
     line-height: 22px;
-}
-
-.links {
-    background-color: rgba(138,188,159,0.5);
-    background-image: url(http://www.csszengarden.com/214/bamboo.png);
-    overflow: hidden;
+    
 }
 
 .links h3 {
@@ -274,9 +271,6 @@ p {
 }
 
 [id*="link"] {
-    padding: 15px 10% 5px 10%;
-    float: left;
-    width: 50%;
     border-top: solid 1px #a9beaf;
     font-family: 'Libre Baskerville';
     font-style: italic;
@@ -291,4 +285,321 @@ p {
 }
 
 
+@media screen and (max-width: 1100px) {
+    body {
+        font-size: .7em;
+    }
 
+    .header {
+        padding-left: 28%;
+        padding-top: 4%;
+        height: 180px;
+    }
+
+    .header h1 {
+        font-size:  2.85em;
+    }
+
+    .header h2 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    
+    #titleImg {
+        width: 60px;
+        height: 60px;
+        margin: -15px 20px 0 0;
+        opacity: 0.7;
+    }
+
+    .nav {
+        margin-top: -50px;
+        padding-bottom: 30px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .nav a {
+        font-size: 1.2em;
+    }
+
+    .nav .previous {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .nav .designs {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav .previous {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .nav .next {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .links {
+        background-color: rgba(138,188,159,0.5);
+        background-image: url(http://www.csszengarden.com/214/bamboo.png);
+        overflow: hidden;
+    }
+
+    [id*="link"] {
+        border-top: solid 1px #a9beaf;
+        padding: 15px 10% 5px 10%;
+        float: left;
+        width: 50%;
+    }
+
+    [id*="resource"] {
+        border-top: solid 1px #d9e3dc;
+    }
+
+    #box10 {
+        padding-left: 0;
+    }
+
+    #box3, #box4, #box5, #box6, #box7, #box8 {
+        padding-left: 65px;
+        padding-right: 65px;
+        padding-bottom: 20px;
+        line-height: 22px;
+    }
+
+    .credit {
+        height: 140px;
+        padding-top: 45px;
+        line-height: 2.5;
+    }
+
+    .icons {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .icons i {
+        padding: 7px;
+    }
+
+}
+
+
+@media screen and (min-width: 1101px) {
+
+    body {
+        font-size: .8em;
+    }
+
+    h2 {
+        padding-top: 25px;
+        padding-bottom: 15px;
+        font-size: 2em;
+        font-weight: lighter;
+    }
+
+    .zenContainer {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    #box3, #box4, #box5, #box6 {
+        padding-left: 120px;
+        padding-right: 65px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        line-height: 25px;
+    }
+
+    .header {
+        padding-left: 110px;
+        padding-top: 6%;
+        height: 250px;
+        width: 100%;
+        background-color: rgba(255,255,255,0.2);
+        
+    }
+
+    .header h1 {
+        font-size:  3.4em;
+    }
+
+    .header h2 {
+        padding-top: 8px;
+        font-size: 1.45em;
+        text-align: left;
+    }
+
+    #titleImg {
+        width: 100px;
+        height: 100px;
+        margin: -10px 30px 0 0;
+        opacity: 0.9;
+    }
+
+    .navBox {
+        position: absolute;
+        height: 250px;
+        width: 34%;
+        right: 0;
+        top: 0;
+        background-color: rgba(33,84,95,0.2);
+    }
+
+    
+    .nav {
+        margin-top: -150px;
+        right: 45px;
+        width: fit-content;
+      }
+
+    .nav .designs {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+    .nav a {
+        font-size: 1.25em;
+        background-color: rgba(255, 255, 255, 0.12);
+    }
+
+    .nav .previous {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 4em;
+    }
+
+    .nav .next {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 4em;
+    }
+
+    [id*="resource"] {
+        width: 100%;
+        border-bottom: solid 1px #d9e3dc;
+    }
+
+    #resource8 {
+        border: none;
+    }
+
+    .resources {
+        padding-top: 2%;
+        padding-left: 5%;
+        padding-right: 10%;
+    }
+
+    [id*="link"] {
+        padding-top: 8%;
+        padding-bottom: 8%;
+        
+    }
+
+    .links {
+        padding-top: 8%;
+        padding-left: 5%;
+        padding-right: 10%;
+        background-color: rgba(138,188,159,0.5);
+        background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/bamboo.png);
+        background-repeat: repeat, repeat, no-repeat;
+        background-attachment: scroll, scroll, fixed;
+        background-size: auto, auto, cover;
+        
+    }
+
+    #box6 {
+        background: #edf4f0;
+        margin: 0;
+        width: 34%;
+
+    }
+
+    .credit {
+        padding-top: 65px;
+        height: 240px;
+        font-size: 1.9em;
+        line-height: 1.8;
+    }
+    
+    .icons {
+        padding-top: 45px;
+        padding-bottom: 45px;
+        font-size: 2.2em;
+    }
+
+    .icons a {
+        padding: 20px;
+    }
+
+    #htmlIcon {
+        padding: 12px 15px 12px 15px;
+    }
+
+    #cssIcon {
+        padding: 12px;
+    }
+    
+    #ccIcon {
+        padding: 12px 13px 12px 13px
+    }
+    
+    #accessibleIcon {
+        padding: 12px 14px 12px 14px;
+    }
+
+    #githubIcon {
+        padding: 12px;
+    }
+
+    .intro {
+        order: 2;
+        flex: 2 0 66%;
+      }
+      
+    .resources {
+        order: 3;
+        flex: 1 0 34%;
+      }
+    
+    .mid {
+        order: 4;
+        flex: 2 0 66%;
+      }
+    
+    .links {
+        order: 5;
+        flex: 1 0 34%;
+      }
+    
+    .requirements {
+        order: 6;
+        flex: 2 0 66%;
+      }
+    
+    .columnSpace {
+        background: #edf4f0;
+        order: 7;
+        flex-basis: 1 0 34%;
+      }
+    
+    .credit {
+        order: 8;
+        flex: 100%;
+      }
+    
+    .icons {
+        order: 9;
+        flex: 100%;
+      }
+
+
+}
