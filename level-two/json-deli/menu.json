@@ -1,0 +1,89 @@
+{ 
+    "Deli Menu": [
+        {
+        "Appetizers": [
+            { 
+                "name": "Hearty Beef Chili",
+                "ingredients": ["Grass-fed beef", "Onion", "Black beans", "Tomato"],
+                "description": "Our farm-to-table specialty chili features a low sodium beef broth with diced onion and tomato, black beans, and local grass-fed beef. Topped with optional sour cream, Vermont cheddar cheese, and chopped scallions. Served with artisan bread."
+    
+            },
+    
+            {
+                "name": "Garden Salad",
+                "ingredients": ["Mixed greens", "Onions", "Peppers", "Tomatoes", "Cucumbers", "Croutons"],
+                "description": "Locally harvested greens, including kale, spinach, and arugala. Topped with seasonal veggies and croutons. Dressings available include: House, ranch, thousand island, oil & vinegar. Served with hot buttered bread."
+            },
+    
+            {
+                "name": "Fruit Plate",
+                "ingredients": ["Seasonal fruit", "Yogurt", "Honey", "Walnuts", "Seeds", "Hemp hearts", "Chia seed"],
+                "description": "Vanilla yogurt topped with local honey, walnuts, seeds, hemp hearts, chia see, and seasonal fresh fruit. Ask your server what's in rotation!"
+            }
+    ],
+    
+        "Hot Sandwiches": [
+            {
+                "name": "The Green Mountain Hike",
+                "ingredients": ["Roast beef", "Provolone", "Lettuce", "Tomato", "Onion", "Mayo", "Chimichurri sauce"],
+                "description": "Grass-fed roast beef with provolone cheese, LTO, mayo, and our house made chimichurri sauce. Comes on a heritage roll and served with chips and a pickle."
+            },
+    
+            {
+                "name": "Buffalo Rancher",
+                "ingredients": ["Buffalo chicken", "Cheddar", "Tomato", "Ranch", "Sweet garlic aioli"],
+                "description": "Spicy sweet buffalo chicken topped with cheddar cheese, tomatoes, ranch, and our house made sweet garlic aioli. Comes on an egg roll and served with chips and a pickle."
+            },
+    
+            {
+                "name": "Summer Brie-eze",
+                "ingredients": ["Brie", "Caramelized onions", "Honey-thyme butter"],
+                "description": "Staff favourite grilled cheese featuring our house made honey-thyme butter, caramelized onions, and brie. Comes on sourdough and served with chips and a pickle. Optional chicken upgrade."
+            }
+    
+        ],
+    
+        "Cold Sandwiches": [
+            {
+                "name": "Deli Rose",
+                "ingredients": ["Egg salad", "Spinach", "Lettuce", "Onion", "Tomato", "Smoked salmon", "Dill"],
+                "description": "House made egg salad with smoked salmon, spinach, LTO, and dill. Comes on a croissant and served with chips and a pickle."
+            },
+    
+            {
+                "name": "Yellow Submarine",
+                "ingredients": ["Spread of the week", "Sprouts", "Lettuce", "Tomato", "Onion", "Yellow peppers", "Cucumber"],
+                "description": "Our veggie sub featuring the spread of the week, fresh sprouted greens, LTO, yellow peppers, and cucumber. Comes on our seeded sub roll and served with chips and a pickle."
+            }
+    
+        ],
+    
+        "Desserts": [
+            {
+                "name": "Cream Cheese Frosted Cinnamon Roll",
+                "ingredients": ["Eggs", "Milk", "Cream cheese", "Yeast risen dough", "Vanilla"],
+                "description": "Fresh made cinnamon rolls ropped with our special cream cheese frosting! Served warm."
+            },
+    
+            {
+                "name": "Banana Bread",
+                "ingredients": ["Bananas", "Vanilla", "Eggs", "Walnuts", "Raisins"],
+                "description": "Customer classic banana bread featuring walnuts and raisins."
+            }
+        ],
+    
+        "Drinks": [
+            {
+                "name": "Dirty Chai",
+                "ingredients": ["Espresso", "Chai", "Milk", "Cinnamon"],
+                "description": "Double shot of espresso with our house made chai, milk of your choice, and topped with cinnamon."
+            },
+    
+            {
+                "name": "Hibiscus Deli Cooler",
+                "ingredients": ["Hibiscus tea", "Pomegranate juice", "Mint", "Agave"],
+                "description": "Iced hibiscus tea mixed with pomegranate juice, mint, and lightly sweetened with agave."
+            }
+        ]
+}]
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/28ce2abbec.js" crossorigin="anonymous"></script>
+</head>
+<body></body>
+
+    <div class="container">
+        <div id="formContainer">
+            <form id="form" name="taskForm">
+                <h1 id="header">Let's Get Shit Done</h1>
+                <div id="inputBoxes">
+                    <input type="text" class="input" id="title" name="title" placeholder="title" required>
+                    <input type="text" class="input" id="description" name="description" placeholder="description">
+                    <input type="number" class="input" id="price" name="price" placeholder="price">
+                    <input type="url" class="input" id="imgUrl" name="imgUrl" placeholder="image url">
+                </div>
+                <div id="clickables">
+                <!-- <div id="priorityCheck">  
+                    <input type="checkbox" id="important" name="priority" value="important">
+                    <label for="important">High Priority</label>  
+                </div>  -->
+                <button id="submit">add task</button>
+                </div>
+            </form>
+        </div>
+        <div id="tableWrapper">
+            <div id="todoTasks">
+                <h1 id="subHeader">To do</h1>
+                <table  id="todoTable">
+                    <tbody>
+    
+                    </tbody>
+                </table>
+
+            </div>
+            
+            
+            <!-- <div id="doingTasks">
+                <h1 id="subHeader">Doing</h1>
+                <table id="doingTable">
+                    <tbody>
+    
+                    </tbody>
+                </table>
+
+            </div> -->
+
+            <!-- <ul id="completedTasks">
+                <h1 id="subHeader">Completed</h1>
+            </ul> -->
+        </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script> -->
+    <!-- <script src="dist/RowSorter.js"></script> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
