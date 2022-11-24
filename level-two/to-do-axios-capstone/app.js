@@ -174,13 +174,6 @@ const createTodo = (todo) => {
 getData()
 
 
-// const editTodo = (update) => {
-//     // console.log(update)
-//     axios.put("https://api.vschool.io/aloe/todo/" + update)
-//         .then(res => console.log(res.data))
-//         .catch(err => console.log(err)) 
-// }
-
 
 const deleteTodo = (check) => {
     // console.log(check)

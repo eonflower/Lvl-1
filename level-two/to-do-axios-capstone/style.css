@@ -117,10 +117,6 @@ label {
     transition: all ease-in-out .2s;
 }
 
-/* p {
-    margin: 0;
-    padding: 2px;
-} */
 
 #header {
     position: absolute;
@@ -213,10 +209,7 @@ td img  {
     padding: 2px;
 }
 
-/* @media (min-width: 1201px) {.buttons{display: flex;}}
-@media (max-width: 1200px) {.buttons{max-height: 100px;}}
-@media (max-width: 1000px) {.buttons{max-height: 85px;}}
-@media (max-width: 600px) {.buttons{max-height: 50px;}} */
+
 @media (max-width: 500px) {.buttons{display:block; padding-right: 2px; text-align: center;}}
 
 
@@ -371,9 +364,6 @@ tbody {
 
 
 
-/* #completedTasks > #taskText {
-    text-decoration: line-through;
-} */
 
 
 
