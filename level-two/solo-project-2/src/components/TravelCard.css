@@ -1,0 +1,110 @@
+.cards {
+    display: grid;
+    margin: 0;
+    padding: 40px 60px 25px 60px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
+    
+}
+
+/* responsive font sizes */
+@media screen and (min-width: 1201px){.cards {font-size: 1.4em;}}
+@media screen and (min-width: 1000px)  and (max-width: 1200px){.cards {font-size: 1em;}}
+@media screen and (min-width: 800px)  and (max-width: 1000px){.cards {font-size: .95em;}}
+@media screen and (min-width: 660px) and (max-width: 799px) {.cards{font-size: .75em;}}
+@media screen and (max-width: 659px) {.cards{font-size: .8em;}}
+@media screen and (max-width: 400px) {.cards{font-size: .75em;}}
+
+/* responsive grid */
+@media screen and (min-width: 660px) {
+    .cards {
+        grid-template-areas:
+        'img location'
+        'img title'
+        'img info'
+        'img info'
+        'img info'
+    }}
+@media screen and (max-width: 659px) {.cards {display: block;}}
+
+.card-img {
+    display: grid;
+    grid-area: img;
+    width: 100%;
+    object-fit: contain;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 659px) {.card-location, .card-title, .card-info {padding-bottom: 18px;}}
+@media screen and (max-width: 659px) {.card-img {margin-bottom: 25px;}}
+
+.location-icon {
+  display: inline;
+  align-items: center;
+  padding-right: 5px;
+}
+
+.location {
+font-weight: 400;
+letter-spacing: 0.17em;
+}
+
+.card-location {
+    grid-area: location;
+    font-size: larger;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.google-link {
+    text-decoration: none;
+    border-radius: 9px;
+    color:rgba(0, 133, 190, 0.544);
+    transition: all ease-in-out .7s;
+    padding: 5px;
+    font-size: .65em;
+
+}
+
+.google-link:hover {
+    color: white;
+    background: rgb(48, 152, 97);
+    border-radius: 9px;
+    transition: all ease-in-out .5s;
+}
+
+.card-title {
+    grid-area: title;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    font-size: 1.8em;
+}
+
+.card-info {
+    grid-area: info;
+}
+
+.card-dates {
+    display: flex;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    width: 100%;
+}
+
+
+p {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+

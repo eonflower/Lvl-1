@@ -1,0 +1,17 @@
+html { font-family: "Inter", "system-ui"; }
+
+@supports (font-variation-settings: normal) {
+  html { font-family: "Inter var", "system-ui"; }
+}
+
+
+.card--list {
+  display: block;
+}
+
+.hr {
+  background-color: rgba(172, 172, 172, 0.443);
+  height: 1px;
+  border: none;
+}
+
