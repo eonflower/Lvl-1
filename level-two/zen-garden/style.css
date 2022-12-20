@@ -128,18 +128,6 @@ p {
     transition: all 0.25s ease-out;
 }
 
-#download::before {
-    margin-right: 5px;
-    display: inline-block;
-    font: var(--fa-font-solid);
-    content: "\f34a";
-    position: relative;
-    border-radius: 1px;
-    font-size: 20px;
-    background: #d9e1cd;
-    color: #809b7e;
-}
-
 .intro a:hover {
     cursor: pointer;
     padding: 5px;
