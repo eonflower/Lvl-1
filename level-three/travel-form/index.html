@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Off to Better Places</h1>
+    <form name="myForm" id="myForm">
+        <p id="header">What is your name?</p>
+        <input name="firstName" type="text" placeholder="First name">
+        <input name="lastName" type="text" placeholder="Last name">
+        <br>
+        <p id="header">How old are you?</p>
+        <input name="age" type="number" placeholder="Age">
+        <br>
+        <p id="header">Which best represents your gender identity?</p>
+        <input name="gender" type="radio" id="man" value="Man">
+        <label for="man">Man</label>
+        <input name="gender" type="radio" id="woman" value="Woman">
+        <label for="woman">Woman</label>
+        <input name="gender" type="radio" id="nonbinary" value="Non-binary">
+        <label for="nonbinary">Non-binary</label>
+        <input name="gender" type="radio" id="other" value="Other">
+        <label for="other">Other</label>
+        <br>
+        <p id="header">Where would you like to go?</p>
+        <select name="destination">
+            <option value="" disabled selected>Select Option</option>
+            <option value="Krabi, Thailand">Krabi, Thailand</option>
+            <option value="Osaka, Japan">Osaka, Japan</option>
+            <option value="Melbourne, Australia">Melbourne, Australia</option>
+            <option value="Joshua Tree, California, USA">Joshua Tree, California, USA</option>
+            <option value="belfast">Belfast, Ireland</option>
+        </select>
+        <p id="header">Dietary Restrictions (Please check all that apply):</p>
+        <input name="dietary" type="checkbox" id="vegetarian" value="Vegetarian">
+        <label for="vegetarian">Vegetarian</label>
+        <input name="dietary" type="checkbox" id="vegan" value="Vegan">
+        <label for="vegan">Vegan</label>
+        <input name="dietary" type="checkbox" id="glutenFree" value="Gluten Free">
+        <label for="glutenFree">Gluten Free</label>
+        <input name="dietary" type="checkbox" id="dairyFree" value="Dairy Free">
+        <label for="dairyFree">Dairy Free</label>
+        <input name="dietary" type="checkbox" id="kosher" value="Kosher">
+        <label for="kosher">Kosher</label>
+        <br></br>
+        <button type="button" id="submit">Submit</button>
+    </form>
+<script src="app.js"></script>
+</body>
+</html>

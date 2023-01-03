@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum:wght@100;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  
+}
+
+.header {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Caveat";
+  font-size: 1.8rem;
+  margin-bottom: 2.2rem;
+  text-align: center;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 3px rgb(146, 146, 146);
+  color:rgba(0, 0, 0, 0.7);
+}
+
+.card-container {
+  margin-top: 11rem;
+  justify-content: center;
+  /* margin: .8rem; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 16rem);
+  grid-gap: 3rem 3rem;
+  
+}
+
+.card {
+  display: grid;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 8px 8px 12px rgba(113, 113, 113, 0.617);
+  box-shadow: 8px 8px 12px  rgba(113, 113, 113, 0.617);
+  -moz-box-shadow: 8px 8px 12px  rgba(113, 113, 113, 0.617);
+  -webkit-box-shadow: 8px 8px 12px  rgba(113, 113, 113, 0.617);
+  -o-box-shadow: 8px 8px 12px  rgba(113, 113, 113, 0.617);
+  border-radius: 15px;
+
+  
+}
+
+.card-img {
+  height: 16rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.card-text {
+  font-family: "Forum";
+  padding:  8px 15px 12px;
+  border-radius: 0 0 15px 15px;
+  border-top: none;
+}
+
+.card.place {
+  margin-bottom: 0;
+}
+
+.location-icon {
+  font-size: .85rem;
+}
+
+.text-span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+

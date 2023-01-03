@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans";
+  font-size: .75rem;
+  height: 100vh;
+  background: linear-gradient(225deg, rgb(145, 145, 145), rgb(0, 0, 0));
+}
+
+
+
+.friend-list {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: 100%;
+}
+
+.friend-card {
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 230px;
+  border: 5px double ;
+  background-color: rgb(227, 227, 227);
+  box-shadow: 12px 12px 0px rgba(176, 255, 103, 0.609);
+}
+
+.friend-name, .friend-age {
+  margin: 0;
+}
+
+.friend-name {
+  padding-bottom: .5rem;
+}
+
+.friend-info {
+  padding-top: .3rem;
+  padding-right: 1.2rem;
+  border-right: 1px solid black;
+}
+
+.pet-container {
+  padding: .3rem;
+}
+
+.pet-title {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid black;
+}
+
+.pet-name {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-top: .5rem;
+}
+
+.pet-breed {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
