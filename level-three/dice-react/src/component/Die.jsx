@@ -3,32 +3,34 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiceOne, faDiceTwo, faDiceThree, faDiceFour, faDiceFive, faDiceSix } from "@fortawesome/free-solid-svg-icons";
 
 export default function Die(props) {
-    const [isActive, setIsActive] = useState(true)
+
+    // console.log("props", props.reset)
 
     function handleClick() {
-        setIsActive(current => !current)
+        // console.log(index)
+        props.dieClicked(props.index)
     }
+    let newIcon = null
 
-
-     if (props.dieNumber === 1){
-           return <FontAwesomeIcon className={isActive ? "icon-btn" : "icon-clicked"} onClick={handleClick} icon={faDiceOne} />
+    if (props.dieNumber === 1){
+            newIcon = faDiceOne
        } else if (props.dieNumber === 2){
-           return <FontAwesomeIcon className={isActive ? "icon-btn" : "icon-clicked"} onClick={handleClick} icon={faDiceTwo} />
+            newIcon = faDiceTwo
        } else if (props.dieNumber === 3){
-           return <FontAwesomeIcon className={isActive ? "icon-btn" : "icon-clicked"} onClick={handleClick} icon={faDiceThree} />
+            newIcon = faDiceThree
        } else if (props.dieNumber === 4){
-           return <FontAwesomeIcon className={isActive ? "icon-btn" : "icon-clicked"} onClick={handleClick} icon={faDiceFour} />
+            newIcon = faDiceFour
        } else if (props.dieNumber === 5){
-           return <FontAwesomeIcon className={isActive ? "icon-btn" : "icon-clicked"} onClick={handleClick} icon={faDiceFive} />
+            newIcon = faDiceFive
        } else if (props.dieNumber === 6){
-           return <FontAwesomeIcon className={isActive ? "icon-btn" : "icon-clicked"} onClick={handleClick} icon={faDiceSix} />
+            newIcon = faDiceSix
        }
     
 
-
     return (
-        <div className="dice-container">
-            <FontAwesomeIcon />
-        </div>
+            <FontAwesomeIcon 
+            className={props.isActive ? "icon-clicked" : "icon-btn"} 
+            onClick={handleClick} 
+            icon={newIcon} />
     )
 }
