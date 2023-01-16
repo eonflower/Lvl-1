@@ -32,12 +32,7 @@ export default function Dicebox() {
     function activeDie(index) {
         setNumbers(prevNumber => {
             return prevNumber.map((die, i) => {
-                if (die.isActive === false) {
-                    return {number: die.number, isActive: index === i ? true : false}
-                } else if (die.isActive === true) {
-                    return {number: die.number, isActive: index === i ? false : true}
-                }
-                
+                return {number: die.number, isActive: index === i ? !die.isActive : die.isActive}
             })
         })
     }

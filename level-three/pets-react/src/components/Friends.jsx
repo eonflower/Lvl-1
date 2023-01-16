@@ -19,7 +19,6 @@ export default function Friends(props) {
             {/* <hr className="page-break"/> */}
              
              <div className="pet-container">
-                <h2 className="pet-title">Pets</h2>
                 {animal}
             </div>
         </div>

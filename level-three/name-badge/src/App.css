@@ -1,0 +1,206 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+/* font-family: 'Luckiest Guy', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+body {
+  margin: 0;
+  font-family: 'Open Sans';
+  line-height:  17px;
+}
+
+.app {
+  height: 100vh;
+	width: 100vw;
+  padding: 5rem 0;
+  background-color:rgba(24, 74, 255, 0.253);
+}
+
+.app-title {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  font-weight: 100;
+  font-family: 'Luckiest Guy';
+  letter-spacing: 5px;
+  color: rgba(0, 0, 0);
+  text-shadow: 1px 2px 5px rgb(255, 255, 255);
+}
+
+.form {
+  margin: auto;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  gap: .8rem;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  max-width: 550px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 1px 3px 8px rgba(67, 67, 67, 0.66);
+}
+
+input, textarea {
+  border-radius: 5px;
+  background-color:rgba(24, 74, 255, 0.089);
+  border: 2px inset rgba(51, 51, 51, 0.253);
+}
+
+button {
+  border-radius: 20px;
+  background-color:rgba(176, 188, 228, 0.5);
+  border: 2px outset rgba(176, 176, 176, 0.989);
+  transition: all ease-in-out .3s;
+}
+
+button:active {
+transition: all ease-in-out .3s;
+background-color:rgba(142, 153, 188, 0.735);
+}
+
+.badge-list {
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.badge-card {
+  margin: 1rem;
+  border-radius: 20px;
+  height: 220px;
+  width: 350px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  box-shadow: 1px 3px 8px rgba(67, 67, 67, 0.66);
+}
+
+.dots {
+  background:
+    radial-gradient(rgb(255, 255, 255) 20%, transparent 19%),
+    radial-gradient(rgb(255, 255, 255) 20%, transparent 19%),
+    transparent;
+    background-size: 6px 6px;
+    background-position: 0 0, 3px 3px;
+    grid-column: 1 / span 12;
+    grid-row: 4 / span 3;
+    margin: 10px 0 15px 10px;
+    z-index: 1;
+}
+
+.right {
+  border-radius: 0 20px 20px 0;
+  grid-column: 8 / span 5;
+  grid-row: 1 / span 6;
+}
+
+.left {
+  border-radius: 20px 0px 0px 20px;
+  grid-column: 1 / span 7;
+  grid-row: 1 / span 6;
+}
+
+.triangle {
+  clip-path: polygon(35% -120%, 100% 50%, 0% 135%);
+  grid-row: 1 / span 6;
+  grid-column: 1 / span 12;
+  position: relative;
+  z-index: 2;
+}
+
+.blue {
+  background-color: rgba(89, 185, 254, 0.5);
+}
+
+.purple {
+  background-color: rgba(131, 48, 255, 0.5);
+}
+
+.pink {
+  background-color: rgba(255, 192, 225, 0.7);
+}
+
+.yellow {
+  background-color: rgba(255, 245, 134, 0.7);
+}
+
+.orange {
+  background-color: rgba(249, 161, 89, 0.7);
+}
+
+hr {
+  width: 70%;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  border: 0;
+  border-top: 2px solid rgba(255, 255, 255, 0.7);
+  background: none;
+}
+
+
+.badge-info {
+  background-color: rgba(255, 255, 255, 0.65);
+  display: flex;
+  flex-direction: column;
+  grid-column: 3 / span 8;
+  grid-row: 2 / span 4;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 3;
+  font-size: .6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+}
+
+.badge-name-span {
+  margin: 0;
+  text-align: center;
+  grid-column: 3 / span 8;
+  grid-row: 1 / span 1;
+  z-index: 4;
+}
+
+.job-title {
+  margin: 0;
+  font-size: .6rem;
+  font-weight: 700;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  grid-column: 3 / span 8;
+  grid-row: 1 / span 2;
+  z-index: 4;
+}
+
+.name, .bio, .email, .phone {
+  margin: 0;
+}
+
+.name {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.pronouns {
+  display: inline-block;
+  margin: 0;
+  padding-left: .5rem;
+  font-size: .6rem;
+  font-weight: 700;
+}
+
+.bio {
+  padding: 0 .2rem;
+}

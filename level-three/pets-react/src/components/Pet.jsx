@@ -13,12 +13,13 @@ export default function Pet(props) {
         return word;
     })
 
-    let capObj = JSON.parse(capitalized)
+    let cap = JSON.parse(capitalized)
     
     return (
         <span className="pet-info">
-                <h3 className="pet-name">{capObj.name}</h3>
-                <p className="pet-breed">{capObj.breed}</p>
+                <img className="pet-pic" src={cap.img} alt="" />
+                <h3 className="pet-name">{cap.name}</h3>
+                <p className="pet-breed">{cap.breed}</p>
         </span>
     )
 
