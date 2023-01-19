@@ -39,18 +39,21 @@ body {
     border-top: solid 8px rgba(32, 86, 91, 0.8);
     width: 100%;
     background-attachment: fixed, fixed, scroll;
-    background-image: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
+    background-image: url(./images/contours@2x.png), url(./images/gridlines.png), url(./images/huntington.jpg);
     background-size: 50% auto, auto, cover;
     background-repeat: repeat, repeat, no-repeat;
     background-position: 0 0, 0 0, 0 50%;
+    margin: auto;
+    align-items: center;
+    padding-bottom: 2rem;
+    height: 200px;
     
 }
 
 
-
 #titleImg {
     display: inline;
-    background: url(enso.svg);
+    /* background: url(./images/enso.svg); */
     margin: -15px 20px 0 0;
 
 }
@@ -61,6 +64,9 @@ body {
     text-decoration: none;
     justify-content: space-between;
     position: absolute;
+    margin-top: -50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .nav a {
@@ -109,15 +115,18 @@ body {
 h2 {
     font-family: 'Julius Sans One', sans-serif;
     font-weight: lighter;
-    
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-size: 1.8em;
 }
 
 p {
     padding-bottom: 15px;
+    
 }
 
 .intro {
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
 .intro a {
@@ -141,7 +150,7 @@ p {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: rgba(155, 198, 173, 0.5);
-    background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/bamboo.png);
+    background-image: url(./images/contours-opaque.png), url(./images/gridlines-opaque.png), url(./images/bamboo.png);
     background-repeat: repeat, repeat, no-repeat;
     background-attachment: scroll, scroll, fixed;
     background-size: auto, auto, cover;
@@ -158,11 +167,11 @@ p {
     display: block;
     font-style: italic;
     text-align: center;
-    font-size: 1.6em;
+    font-size: 2.5rem;
     color: rgba(255, 255, 255, 0.5);
-    background-image: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/koi.jpg);
+    background-image: url(./images/contours@2x.png), url(./images/gridlines.png), url(./images/noise.png), url(./images/koi.jpg);
     background-repeat: repeat, repeat, repeat, no-repeat;
-    background-attachment: scroll, scroll, scroll, fixed;
+    background-attachment: scroll, scroll, scroll, scroll;
     background-size: 50% auto, auto, auto, cover;
 }
 
@@ -272,31 +281,286 @@ p {
     width: 100%;
 }
 
-
-@media screen and (max-width: 1100px) {
-    body {
-        font-size: .7em;
-    }
-
+@media screen and (max-width: 524px) {
     .header {
-        padding-left: 28%;
-        padding-top: 4%;
-        height: 180px;
+        justify-content: center;
     }
 
     .header h1 {
-        font-size:  2.85em;
+        font-size:  1.5rem;
     }
 
     .header h2 {
-        font-size: 1.2em;
+        font-size: .9rem;
+        padding: 0;
         text-align: center;
     }
     
     #titleImg {
         width: 60px;
         height: 60px;
-        margin: -15px 20px 0 0;
+        margin: -25px 20px 0 0;
+        opacity: 0.7;
+    }
+
+    
+    .nav {
+        margin-top: -50px;
+    }
+
+    .nav a {
+        font-size: 1.2em;
+    }
+
+    .nav .previous {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .nav .designs {
+        padding: .7rem 0 0 0;
+    }
+
+    .nav .previous {
+        font-size: 3em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .nav .next {
+        font-size: 3em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .links {
+        background-color: rgba(138,188,159,0.5);
+        background-image: url(./images/bamboo.png);
+        overflow: hidden;
+    }
+
+    [id*="link"] {
+        border-top: solid 1px #a9beaf;
+        padding: .8rem 5%;
+        float: left;
+        width: 50%;
+        font-size: .6rem;
+    }
+
+    [id*="resource"] {
+        border-top: solid 1px #d9e3dc;
+        padding: 2% 0 0 5%;
+    }
+
+    
+    #resource8 {
+        border-top: solid 1px #d9e3dc;
+        /* border: none; */
+    }
+
+    .resources {
+        padding-top: 2%;
+        
+    }
+
+    .resources h3 {
+        font-family: 'Julius Sans One', sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        font-size: .8rem;
+    }
+
+    .resources a {
+        font-size: .8rem;
+    }
+
+    .resources p {
+        font-size: .8rem;
+    }
+
+    #box10 {
+        padding-left: 0;
+    }
+    
+    #box3, #box4, #box5, #box6 {
+        padding: 1rem 1rem 1rem;
+        line-height: 1.6rem;
+    }
+
+    .credit {
+        height: 180px;
+        padding-top: 3rem;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 5rem;
+        font-size: 1rem;
+        line-height: 2.5rem;
+        
+    }
+
+    
+
+    .icons {
+        padding-top: 2.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .icons i {
+        padding: 7px;
+        margin-inline: 5px;
+    }
+
+}
+
+@media screen and (min-width: 525px) and (max-width: 650px) {
+    .header {
+        justify-content: center;
+    }
+
+    .header h1 {
+        font-size:  2.2rem;
+    }
+
+    .header h2 {
+        font-size: 1rem;
+        padding: 0;
+        text-align: center;
+    }
+    
+    #titleImg {
+        width: 60px;
+        height: 60px;
+        margin: -25px 20px 0 0;
+        opacity: 0.7;
+    }
+
+    .nav {
+        margin-top: -50px;
+    }
+
+    .nav a {
+        font-size: 1.2em;
+    }
+
+    .nav .previous {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .nav .designs {
+        padding: .7rem 0 0 0;
+    }
+
+    .nav .previous {
+        font-size: 3em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .nav .next {
+        font-size: 3em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .links {
+        background-color: rgba(138,188,159,0.5);
+        background-image: url(./images/bamboo.png);
+        overflow: hidden;
+    }
+
+    [id*="link"] {
+        border-top: solid 1px #a9beaf;
+        padding: 1rem 5%;
+        float: left;
+        width: 50%;
+        font-size: .7rem;
+    }
+
+    [id*="resource"] {
+        border-top: solid 1px #d9e3dc;
+        padding: 2% 0 0 5%;
+    }
+
+    
+    #resource8 {
+        border-top: solid 1px #d9e3dc;
+        /* border: none; */
+    }
+
+    .resources {
+        padding-top: 2%;
+        
+    }
+
+    .resources h3 {
+        font-family: 'Julius Sans One', sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 1rem;
+    }
+
+    #box10 {
+        padding-left: 0;
+    }
+    
+    #box3, #box4, #box5, #box6 {
+        padding: 1rem 3rem 1rem;
+        line-height: 1.6rem;
+    }
+
+    .credit {
+        height: 180px;
+        padding-top: 3rem;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 5rem;
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        
+    }
+
+    .icons {
+        padding-top: 2.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .icons i {
+        padding: 7px;
+        margin-inline: 20px;
+    }
+
+    
+}
+
+
+@media screen and (min-width: 651px) and (max-width: 1099px) {
+    body {
+        font-size: .75rem;
+    }
+
+    .header {
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+        height: 200px;
+    }
+
+    .header h1 {
+        font-size:  3rem;
+    }
+
+    .header h2 {
+        padding: 10px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    #titleImg {
+        width: 80px;
+        height: 80px;
+        margin: -35px 20px 0 0;
         opacity: 0.7;
     }
 
@@ -335,13 +599,13 @@ p {
 
     .links {
         background-color: rgba(138,188,159,0.5);
-        background-image: url(http://www.csszengarden.com/214/bamboo.png);
+        background-image: url(./images/bamboo.png);
         overflow: hidden;
     }
 
     [id*="link"] {
         border-top: solid 1px #a9beaf;
-        padding: 15px 10% 5px 10%;
+        padding: 1.2rem 10% 1.2rem 10%;
         float: left;
         width: 50%;
     }
@@ -354,22 +618,25 @@ p {
         padding-left: 0;
     }
 
-    #box3, #box4, #box5, #box6, #box7, #box8 {
-        padding-left: 65px;
-        padding-right: 65px;
-        padding-bottom: 20px;
-        line-height: 22px;
+    #box3, #box4, #box5, #box6 {
+        padding: 1rem 5.4rem 1rem;
+        line-height: 1.6rem;
     }
 
     .credit {
-        height: 140px;
-        padding-top: 45px;
-        line-height: 2.5;
+        height: 180px;
+        padding-top: 3rem;
+        padding-left: 65px;
+        padding-right: 65px;
+        padding-bottom: 5rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        
     }
 
     .icons {
-        padding-top: 30px;
-        padding-bottom: 50px;
+        padding-top: 2.5rem;
+        padding-bottom: 3rem;
     }
 
     .icons i {
@@ -379,17 +646,10 @@ p {
 }
 
 
-@media screen and (min-width: 1101px) {
+@media screen and (min-width: 1100px) {
 
     body {
-        font-size: .8em;
-    }
-
-    h2 {
-        padding-top: 25px;
-        padding-bottom: 15px;
-        font-size: 2em;
-        font-weight: lighter;
+        font-size: 1rem;
     }
 
     .zenContainer {
@@ -402,12 +662,12 @@ p {
         padding-right: 65px;
         padding-bottom: 20px;
         padding-top: 20px;
-        line-height: 25px;
+        line-height: 2.2rem;
     }
 
     .header {
-        padding-left: 110px;
-        padding-top: 6%;
+        padding-left: 10rem;
+        padding-top: 4%;
         height: 250px;
         width: 100%;
         background-color: rgba(255,255,255,0.2);
@@ -415,19 +675,19 @@ p {
     }
 
     .header h1 {
-        font-size:  3.4em;
+        font-size:  3.1em;
     }
 
     .header h2 {
         padding-top: 8px;
-        font-size: 1.45em;
+        font-size: 1.2em;
         text-align: left;
     }
 
     #titleImg {
         width: 100px;
         height: 100px;
-        margin: -10px 30px 0 0;
+        margin: -30px 30px 0 0;
         opacity: 0.9;
     }
 
@@ -493,11 +753,12 @@ p {
     }
 
     .links {
+
         padding-top: 8%;
         padding-left: 5%;
         padding-right: 10%;
         background-color: rgba(138,188,159,0.5);
-        background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/bamboo.png);
+        background-image: url(./images/contours-opaque.png), url(./images/gridlines-opaque.png), url(./images/bamboo.png);
         background-repeat: repeat, repeat, no-repeat;
         background-attachment: scroll, scroll, fixed;
         background-size: auto, auto, cover;
@@ -512,9 +773,9 @@ p {
     }
 
     .credit {
-        padding-top: 65px;
-        height: 240px;
-        font-size: 1.9em;
+        padding: 3.5rem 6rem 0;
+        height: 260px;
+        font-size: 2.2rem;
         line-height: 1.8;
     }
     

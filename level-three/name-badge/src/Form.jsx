@@ -15,7 +15,7 @@ export default function Form(props) {
     email: "",
     phoneNumber: "",
     bio: "",
-    buttonDisabled: true,
+    buttonDisabled: false,
     leftColor: left,
     rightColor: right
 })
@@ -27,9 +27,9 @@ function handleChange(event) {
         ...prevData,
         [name]: value
     }))
-    if (formData.firstName !== "" && formData.lastName !== "" && formData.pronouns !== "" && formData.jobTitle !== "" && formData.email !== "" && formData.phoneNumber !== "" && formData.bio !== "") {
-        setFormData(prevData => ({...prevData, buttonDisabled: false}))
-    }
+    // if (formData.firstName !== "" && formData.lastName !== "" && formData.pronouns !== "" && formData.jobTitle !== "" && formData.email !== "" && formData.phoneNumber !== "" && formData.bio !== "") {
+    //     setFormData(prevData => ({...prevData, buttonDisabled: false}))
+    // }
 }
 
 const createBadge = (event) => {
@@ -43,7 +43,7 @@ const createBadge = (event) => {
         email: "",
         phoneNumber: "",
         bio: "",
-        buttonDisabled: true,
+        buttonDisabled: false,
         leftColor: left,
         rightColor: right
     }))
@@ -59,9 +59,10 @@ function handleSubmit(event) {
         <div>
             <form className="form" onSubmit={createBadge}>
                 <input 
+                    required
                     name="firstName"
                     type="text"
-                    minLength={3}
+                    // minLength={3}
                     value={formData.firstName}
                     placeholder="First Name"
                     onChange={handleChange}
@@ -69,12 +70,13 @@ function handleSubmit(event) {
                 <input
                     name="lastName"
                     type="text"
-                    minLength={3}
+                    // minLength={3}
                     value={formData.lastName}
                     placeholder="Last Name"
                     onChange={handleChange}
                 />
                 <input 
+                    required
                     name="pronouns"
                     type="text"
                     minLength={3}
@@ -93,7 +95,7 @@ function handleSubmit(event) {
                 <input
                     name="email"
                     type="email"
-                    minLength={3}
+                    // minLength={3}
                     value={formData.email}
                     placeholder="Email"
                     onChange={handleChange}
@@ -101,7 +103,7 @@ function handleSubmit(event) {
                 <input 
                     name="phoneNumber"
                     type="number"
-                    minLength={3}
+                    // minLength={3}
                     value={formData.phoneNumber}
                     placeholder="Phone Number"
                     onChange={handleChange}

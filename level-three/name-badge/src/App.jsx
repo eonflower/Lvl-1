@@ -10,6 +10,23 @@ const addBadge = (newBadge) => {
   setBadgeList(prev => [...prev, newBadge])
 }
 
+const colors = [{
+  leftColor: "purple", 
+  rightColor: "blue"
+}, {
+  leftColor: "yellow",
+  rightColor: "orange"
+}, {
+  leftColor: "orange",
+  rightColor: "red"
+}, {
+  leftColor: "blue",
+  rightColor: "green"
+}, {
+  leftColor: "yellow",
+  rightColor: "purple"
+}]
+
 const badge = badgeList.map((badge, index) => {
   return <Badge
       firstName={badge.firstName}
@@ -19,10 +36,8 @@ const badge = badgeList.map((badge, index) => {
       email={badge.email}
       phoneNumber={badge.phoneNumber}
       bio={badge.bio}
-      leftColor={badge.leftColor}
-      rightColor={badge.rightColor}
-      // leftColor={badge.leftColor === "purple" ? "yellow" : "purple"}
-      // rightColor={badge.rightColor === "blue" ? "orange" : "blue"}
+      leftColor={colors[index % colors.length].leftColor}
+      rightColor={colors[index % colors.length].rightColor}
       />
 })
 
